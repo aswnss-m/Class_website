@@ -51,12 +51,12 @@ body{
     position: relative;
     font-size: 60px;
     font-weight: bold;
-    right: -20%;
+    right: 20px;
     top: 30px;
 }
 .profile-bio-details{
     position: relative;
-    /* top: 15%; */
+    top: ;
 }
 
 /* Id Selectors */
