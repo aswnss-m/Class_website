@@ -20,7 +20,6 @@
 *.tar
 *.zip
 *.jpg
-*.png
 
 # Logs and databases #
 ######################
