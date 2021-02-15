@@ -1,0 +1,27 @@
+#right{
+    position: absolute;
+    right: 10px;
+  }
+.carousel-height{
+  height: 600px;
+  width: 100%;
+  object-fit: contain ;
+}
+.carousel-height img{
+  transform: translateY(-20%);
+}
+.recent-blog{
+  margin: 30px;
+
+}
+
+#calender{
+  position: absolute;
+  z-index: 100;
+  transform: translate(20%,90%);
+}
+#profile-photo{
+  height: auto;
+  width: 80px;
+  object-fit: cover;
+}
