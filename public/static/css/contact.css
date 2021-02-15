@@ -101,10 +101,10 @@ body{
     }
     .big-box{
         height: 1000px;
-        width: 80%;
+        width: 95%;
         /* Background color of the profile container */
         background-color:var(--boxBackground) ;
-        transform: translate(10%,10%);
+        transform: translate(2.5%,10%);
         border-radius: 30px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         /* overflow: hidden; */
@@ -132,7 +132,7 @@ body{
         position: relative;
         font-size: 1.5rem;
         font-weight: bold;
-        top: -90%;
+        top: -65%;
     }
     .profile-bio-details{
         /* position: relative; */
@@ -141,10 +141,10 @@ body{
         line-height: 1.6rem;
         width: 65%;
         text-align: center;
-        transform: translate(-12.5%,-45%);
+        transform: translate(-12.5%,-30%);
     }
     .profile-bio-links{
-        transform: translate(-20%,-100%);
+        transform: translate(-22.5%,-70%);
     }
     
 }
