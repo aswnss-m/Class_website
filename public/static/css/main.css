@@ -1,3 +1,11 @@
+:root{
+  --temp-color:grey;
+}
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 #right{
     position: absolute;
     right: 10px;
@@ -14,7 +22,27 @@
   margin: 30px;
 
 }
+.block{
+  display: grid;
+  place-items: center;
+  height: 27rem;
+  width: 100%;
+  background-color: var(--temp-color);
+}
 
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.album{
+  display: inline-grid;
+  grid-template-columns: 120 90px auto 50px 40px;
+  grid-template-rows: 25% 10% auto;
+}
+.album img{
+  width: 30%;
+}
 #calender{
   position: absolute;
   z-index: 100;
