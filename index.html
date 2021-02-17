@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="public/static/css/main.css">
   <link rel="stylesheet" href="public/static/css/bootstrap.css">
 
+  <!-- LightBox -->
+  <link rel="stylesheet" href="lightbox/css/lightbox.css">
 
   <!-- Under construction Style
       <style type="text/css">
@@ -145,12 +147,14 @@
   <!-- Div -->
   <div class="block text-light h1 parallax" id="bottom-image">Together we shape the future.</div>
   <!-- Photos -->
+<!-- Light box -->
   <div class="grid-container">
-    <div class="item1"><div class="placeholder h5 text-light">Photo Placeholder</div></div>
-    <div class="item2"><div class="placeholder h5 text-light">Photo Placeholder</div></div>
-    <div class="item3"><div class="placeholder h5 text-light">Photo Placeholder</div></div>
-    <div class="item4"><div class="placeholder h5 text-light">Photo Placeholder</div></div>
+    <div class="item1" ><div class="placeholder h5 text-light" ><a href="public/static/Photos/item1.JPG" data-lightbox="image-1" data-title="{{image.caption}}"><img src="public/static/Photos/item1.JPG" alt="This is an image" ></a></div></div>
+    <div class="item2"><div class="placeholder h5 text-light"><a href="public/static/Photos/item2.JPG" data-lightbox="image-1" data-title="{{image.caption}}"><img src="public/static/Photos/item2.JPG" alt="This is an image" ></a></div></div>
+    <div class="item3"><div class="placeholder h5 text-light"><a href="public/static/Photos/item3.JPG" data-lightbox="image-1" data-title="{{image.caption}}"><img src="public/static/Photos/item3.JPG" alt="This is an image" ></a></div></div>
+    <div class="item4"><div class="placeholder h5 text-light"><a href="public/static/Photos/item4.JPG" data-lightbox="image-1" data-title="{{image.caption}}"><img src="public/static/Photos/item4.JPG" alt="This is an image" ></a></div></div>
   </div>
+
 
 <!-- <img src="public/static/Photos/item1.JPG" alt="background-image" class="image">
 <img src="public/static/Photos/item3.JPG" alt="background-image" class="image">
@@ -171,6 +175,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
     crossorigin="anonymous"></script>
+
+  <!-- Lightbox javascript -->
+  <script src="lightbox/js/lightbox-plus-jquery.js"></script>
 </body>
 
 </html>
