@@ -1,15 +1,12 @@
 :root{
   --temp-color:grey;
 }
+
 body{
   margin: 0;
   padding: 0;
   height: 100%;
 }
-#right{
-    position: absolute;
-    right: 10px;
-  }
 .carousel-height{
   height: 600px;
   width: 100%;
@@ -23,13 +20,27 @@ body{
 
 }
 .block{
+  /* position:static; */
   display: grid;
   place-items: center;
   height: 27rem;
   width: 100%;
   background-color: var(--temp-color);
+  /* z-index: -100; */
 }
+.parallax {
+  /* The image used */
+  
 
+  /* Full height */
+  height: 550px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .footer{
   display: flex;
   justify-content: center;
@@ -43,6 +54,10 @@ body{
 .album img{
   width: 30%;
 }
+.top-logo{
+  font-size:8rem;
+  align-items: left; 
+}
 #calender{
   position: absolute;
   z-index: 100;
@@ -53,3 +68,18 @@ body{
   width: 80px;
   object-fit: cover;
 }
+#top-image{
+  background-image: url("https://images.pexels.com/photos/2538122/pexels-photo-2538122.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+#bottom-image{
+  background-image: url("https://images.pexels.com/photos/1933900/pexels-photo-1933900.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+}
+
+@media screen and (min-width:780px){
+  #menus{
+    display: grid;
+    place-items: end;
+    padding: 2px;
+  }
+}
+
