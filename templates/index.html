@@ -1,0 +1,117 @@
+{%extends 'base.html'%}
+{%block head%}
+<meta name="description" content="This is the official website for the students of CL batch 2020-2024 of SCTCE College Pappanamcode.">
+
+<title>SCT-CL-ARMY | Home Page</title>
+
+
+<link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+
+<!-- LightBox -->
+<link rel="stylesheet" href=" {{url_for('static', filename='lightbox/css/lightbox.css')}} ">
+{%endblock%}
+
+
+
+{%block body%}
+<!-- NavBar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <div class="container-fluid ">
+    <a class="navbar-brand h1" href="#">SCT CL ARMY</a>
+    <div id="menus">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Students</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Blog</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li> -->
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Div -->
+<div class="block text-light h1 parallax" id="top-image">Team Arti.</div>
+
+<!-- Featured -->
+<div class="card text-left recent-blog ">
+  <div class="card-header h5 text-muted">
+    Recent
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">((Recent Blog Title))</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula tincidunt magna, non
+      tristique neque pretium nec. Sed tempor sem faucibus ipsum dignissim fermentum. Integer eu diam ornare,
+      tincidunt neque in, egestas magna. In blandit orci non porta semper. Curabitur pretium nisi quis arcu hendrerit,
+      sed laoreet nisl ullamcorper. </p>
+    <a href="#" class="btn btn-primary">Read >></a>
+  </div>
+  <hr>
+  <div class="card-body">
+    <h5 class="card-title">((Recent Blog Title))</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula tincidunt magna, non
+      tristique neque pretium nec. Sed tempor sem faucibus ipsum dignissim fermentum. Integer eu diam ornare,
+      tincidunt neque in, egestas magna. In blandit orci non porta semper. Curabitur pretium nisi quis arcu hendrerit,
+      sed laoreet nisl ullamcorper. </p>
+    <a href="#" class="btn btn-primary">Read >></a>
+  </div>
+  <a href="#" class="btn btn-lg btn-outline-primary" style="margin: 10px;"> Show more.</a>
+</div>
+<!-- Div -->
+<div class="block text-light h1 parallax" id="bottom-image">Together we shape the future.</div>
+<!-- Photos -->
+<!-- Light box -->
+<div id="photo-gallery">
+  <h3 class="text-muted" id="photo-gallery-name">Moments.</h3>
+  <div class="gallery">
+    <figure class="gallery__item gallery__item--1">
+      <a href="{{url_for('static',filename='Photos/gallery/image-1.JPG')}}" data-lightbox="image-1" data-title="((image.caption))">
+        <img src="{{url_for('static',filename='Photos/gallery/image-1.JPG')}}" class="gallery__img" alt="Image 1"></a>
+    </figure>
+    <figure class="gallery__item gallery__item--2">
+      <a href="{{url_for('static',filename='Photos/gallery/image-2.JPG')}}" data-lightbox="image-1" data-title="((image.caption))">
+        <img src="{{url_for('static',filename='Photos/gallery/image-2.JPG')}}" class="gallery__img" alt="Image 2"> </a>
+    </figure>
+    <figure class="gallery__item gallery__item--3">
+      <a href="{{url_for('static',filename='Photos/gallery/image-3.JPG')}}" data-lightbox="image-1" data-title="((image.caption))">
+        <img src="{{url_for('static',filename='Photos/gallery/image-3.JPG')}}" class="gallery__img" alt="Image 3"></a>
+    </figure>
+  </div>
+</div>
+
+<!-- About -->
+<hr>
+<footer>
+  <div class="footer">
+    <p class="text-muted"> This website is the sole property of CL Students 20-24 batch of Sree Chithra Thirunal
+      College of Engineering</p>
+  </div>
+</footer>
+
+<!-- Bootstrap Java Script -->
+
+
+
+<!-- Lightbox javascript -->
+<script src="{{url_for('static',filename='lightbox/js/lightbox-plus-jquery.js')}}"></script>
+{%endblock%}

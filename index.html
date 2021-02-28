@@ -1,186 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
+{%extends 'base.html'%}
 
-<head>
-  <!-- SEO Tags -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="This is the official website for the students of CL batch 2020-2024 of SCTCE College Pappanamcode.">
-  <meta name=”robots” content=”index, follow”>
-  <title>SCT-CL-ARMY | Home Page</title>
+{%block head%}
+    <title>Aswns's Diary | Home</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}">
+{%endblock%}
 
-
-  <!-- Bootstrap  -->
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" -->
-  <!-- integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
-  <link rel="stylesheet" href="public/static/css/main.css">
-  <link rel="stylesheet" href="public/static/css/bootstrap.css">
-
-  <!-- LightBox -->
-  <link rel="stylesheet" href="lightbox/css/lightbox.css">
-
-  <!-- Under construction Style
-      <style type="text/css">
-        html, body {
-          height: 100%;
-        }
-        body {
-          background-color: #fff;
-          background: radial-gradient(circle at center, #fff 0%, #f8f8f8 75%, #ebebeb 100%);
-          color: #222;
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-          font-size: 1rem;
-          line-height: 1.5;
-          margin: 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        main {
-          padding: 1rem;
-          text-align: center;
-        }
-        h1 {
-          font-size: 2.5rem;
-          line-height: 1.1;
-          margin: 0;
-        }
-        @media screen and (max-width: 480px) {
-          h1 {
-            font-size: 1.5rem;
-          }
-        }
-        h1::after {
-          content: "";
-          background-color: #ffe800;
-          background: repeating-linear-gradient(45deg, #ffe800, #ffe800 0.5rem, #222 0.5rem, #222 1.0rem);
-          display: block;
-          height: 0.5rem;
-          margin-top: 1rem;
-        }
-        p {
-          margin: 1rem 0 0 0;
-        }
-      </style> -->
-
-</head>
-
-<body>
-  <!-- Under Construction
-      <main>
-        <h1>sct-cl-army</h1>
-        <p>Our website is under construction.</p> <br>
-        <a href="public/contact.html" class="btn btn-warning">Checkout Admin Page instead >></a>
-      </main> -->
-
-
-
-  <!-- Change things below this shit , nothing above -->
-
-  <!-- NavBar -->
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <div class="container-fluid ">
-      <a class="navbar-brand h1" href="#">SCT CL ARMY</a>
-      <div id="menus">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="#">Students</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="#">Photos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="#">Blog</a>
-            </li>
-            <!-- <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li> -->
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light" type="submit">Search</button>
-            </form>
-        </div>
-      </div>
+{%block body%}
+<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+<header class="masthead mb-auto">
+<nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand sub-heading" href="#">Aswns's Diary</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/posts">Posts</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+        </li>
+      </ul>
+      <!-- <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
     </div>
   </nav>
+</header>
+  
 
 
-  <!-- Div -->
-  <div class="block text-light h1 parallax" id="top-image">Team Arti.</div>
 
-  <!-- Featured -->
-  <div class="card text-left recent-blog ">
-    <div class="card-header h5 text-muted">
-      Recent
-    </div>
-    <div class="card-body">
-      <h5 class="card-title">{{Recent Blog Title}}</h5>
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula tincidunt magna, non
-        tristique neque pretium nec. Sed tempor sem faucibus ipsum dignissim fermentum. Integer eu diam ornare,
-        tincidunt neque in, egestas magna. In blandit orci non porta semper. Curabitur pretium nisi quis arcu hendrerit,
-        sed laoreet nisl ullamcorper. </p>
-      <a href="#" class="btn btn-primary">Read >></a>
-    </div>
-    <hr>
-    <div class="card-body">
-      <h5 class="card-title">{{Recent Blog Title}}</h5>
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula tincidunt magna, non
-        tristique neque pretium nec. Sed tempor sem faucibus ipsum dignissim fermentum. Integer eu diam ornare,
-        tincidunt neque in, egestas magna. In blandit orci non porta semper. Curabitur pretium nisi quis arcu hendrerit,
-        sed laoreet nisl ullamcorper. </p>
-      <a href="#" class="btn btn-primary">Read >></a>
-    </div>
-    <a href="#" class="btn btn-lg btn-outline-primary" style="margin: 10px;"> Show more.</a>
+    <main role="main" class="inner cover">
+      <h1 class="cover-heading">Cover your page.</h1>
+      <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+      <p class="lead">
+        <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+      </p>
+    </main>
+
+    <footer class="mastfoot mt-auto">
+      <div class="inner">
+        <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      </div>
+    </footer>
   </div>
-  <!-- Div -->
-  <div class="block text-light h1 parallax" id="bottom-image">Together we shape the future.</div>
-  <!-- Photos -->
-  <!-- Light box -->
-  <div id="photo-gallery">
-    <h3 class="text-muted" id="photo-gallery-name">Moments.</h3>
-  <div class="gallery">
-    <figure class="gallery__item gallery__item--1">
-      <a href="https://i.imgur.com/s5RH2Yf.jpg" data-lightbox="image-1" data-title="{{image.caption}}">
-        <img src="https://i.imgur.com/s5RH2Yf.jpg" class="gallery__img" alt="Image 1"></a>
-    </figure>
-    <figure class="gallery__item gallery__item--2">
-      <a href="https://i.imgur.com/1GMUNpo.jpg" data-lightbox="image-1" data-title="{{image.caption}}">
-        <img src="https://i.imgur.com/1GMUNpo.jpg" class="gallery__img" alt="Image 2"> </a>
-    </figure>
-    <figure class="gallery__item gallery__item--3">
-      <a href="https://i.imgur.com/lV8tNAb.jpg" data-lightbox="image-1" data-title="{{image.caption}}">
-        <img src="https://i.imgur.com/lV8tNAb.jpg" class="gallery__img" alt="Image 3"></a>
-    </figure>
-  </div>
-</div>
 
-  <!-- About -->
-  <hr>
-  <footer>
-    <div class="footer">
-      <p class="text-muted"> This website is the sole property of CL Students 20-24 batch of Sree Chithra Thirunal
-        College of Engineering</p>
-    </div>
-  </footer>
 
-  <!-- Bootstrap Java Script -->
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-    crossorigin="anonymous"></script>
-
-  <!-- Lightbox javascript -->
-  <script src="lightbox/js/lightbox-plus-jquery.js"></script>
-</body>
-
-</html>
+{%endblock%}

@@ -98,15 +98,13 @@ body{
 }
 #top-image{
   font-size: 4rem;
-  /*background-image: url("https://images.pexels.com/photos/2538122/pexels-photo-2538122.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");*/
-  background-image: url("https://i.imgur.com/C6bI2o5.jpg");
+  background-image: url("https://images.pexels.com/photos/2538122/pexels-photo-2538122.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
 }
 #bottom-image{
-  /*background-image: url("https://images.pexels.com/photos/1933900/pexels-photo-1933900.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");*/
-  background-image: url("https://i.imgur.com/RskSyNH.jpg");
+  background-image: url("https://images.pexels.com/photos/1933900/pexels-photo-1933900.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
 }
 #photo-gallery{
-margin: 2rem;
+margin: .5rem;
 background-color: white;
 border: 1px solid rgb(160, 160, 160);
 border-radius: 10px;
